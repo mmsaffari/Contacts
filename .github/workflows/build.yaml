@@ -1,0 +1,10 @@
+name: Build my Solution
+on: push
+
+jobs:
+  build:
+    name: Build the Solution
+    runs-on: ubuntu-latest
+    steps:
+      - name: print Current Directory
+        run: pwd
