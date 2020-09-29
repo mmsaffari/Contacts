@@ -6,5 +6,9 @@ jobs:
     name: Build the Solution
     runs-on: ubuntu-latest
     steps:
-      - name: print Current Directory
+      - name: Pull the repo
+        uses: actions/checkout@v2
+      - name: Print Current Directory
         run: pwd
+      - name: List files
+        run: ls
