@@ -12,3 +12,7 @@ jobs:
         run: pwd
       - name: List files
         run: ls
+      - name: See if dotnet exists?
+        run: dotnet
+      - name: See if npm exists?
+        run: npm
