@@ -8,11 +8,9 @@ jobs:
     steps:
       - name: Pull the repo
         uses: actions/checkout@v2
-      - name: Print Current Directory
-        run: pwd
-      - name: List files
-        run: ls
-      - name: See if dotnet exists?
-        run: dotnet
+      - name: switch to src
+        run: cd src
+      - name: build the .NET solution
+        run: dotnet build
       - name: See if npm exists?
-        run: npm
+        run: npm -v
